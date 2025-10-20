@@ -1,2 +1,254 @@
+@font-face {
+  font-family: "Futura";
+  src: "../fonts/FuturaMedium.otf" format("otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura";
+  src: "../fonts/FuturaBold.otf" format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-xl {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+a {
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  color: #202f66;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #202f66;
+  margin: 0 0 10px;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  height: 0;
+}
+body header .header-pill {
+  background-color: #6ed5b8;
+  padding: 25px 20px;
+  border-radius: 55px;
+  display: flex;
+}
+@media screen and (min-width: 480px) {
+  body header .header-pill {
+    padding: 30px 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body header .header-pill {
+    padding: 35px 40px;
+  }
+}
+body header .header-pill .logo {
+  max-width: 100%;
+  height: auto;
+  width: 125px;
+}
+@media screen and (min-width: 480px) {
+  body header .header-pill .logo {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body header .header-pill .logo {
+    width: 180px;
+  }
+}
+body main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+body main .main-section-content-wrapper {
+  background: linear-gradient(180deg, #7E87A7 0%, #7E87A7 53%, #202f66 100%);
+  flex: 1;
+}
+body main .main-section-content-wrapper .main-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  padding: 160px 0 80px;
+}
+@media screen and (min-width: 480px) {
+  body main .main-section-content-wrapper .main-section-content {
+    padding: 200px 0 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body main .main-section-content-wrapper .main-section-content {
+    padding: 300px 0 150px;
+  }
+}
+body main .main-section-content-wrapper .main-section-content h1 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (min-width: 480px) {
+  body main .main-section-content-wrapper .main-section-content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body main .main-section-content-wrapper .main-section-content h1 {
+    font-size: 60px;
+  }
+}
+body main .main-section-content-wrapper .main-section-content h1 span {
+  font-family: "Futura", sans-serif;
+  color: #6ed5b8;
+  font-weight: 700;
+}
+body main .main-section-content-wrapper .main-section-content h2 {
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 450px;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  body main .main-section-content-wrapper .main-section-content h2 {
+    font-size: 22px;
+  }
+}
+body main .main-section-content-wrapper .main-section-content .btn-primary {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #6ed5b8;
+  color: #202f66;
+  padding: 17px 55px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+}
+body main .main-section-content-wrapper .main-section-content .btn-primary:hover {
+  background-color: #fff;
+  color: #6ed5b8;
+}
+body footer .footer-top {
+  padding: 50px 0;
+}
+body footer .footer-top .footer-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  body footer .footer-top .footer-columns {
+    flex-direction: row;
+  }
+}
+body footer .footer-top .footer-columns .footer-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  body footer .footer-top .footer-columns .footer-col {
+    flex-basis: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body footer .footer-top .footer-columns .footer-col {
+    flex-basis: auto;
+    align-items: flex-start;
+  }
+}
+body footer .footer-top .footer-columns .footer-col h4 {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #202f66;
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  body footer .footer-top .footer-columns .footer-col h4 {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+}
+body footer .footer-top .footer-columns .footer-col .logo {
+  max-width: 100%;
+  width: 220px;
+  margin-bottom: 20px;
+}
+body footer .footer-top .footer-columns .footer-col .legal-link {
+  margin-bottom: 10px;
+}
+body footer .footer-top .footer-columns .footer-col .legal-link:hover {
+  color: #6ed5b8;
+}
+body footer .footer-top .footer-columns .footer-col .socials {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+body footer .footer-top .footer-columns .footer-col .socials a:hover rect {
+  fill: #6ed5b8;
+}
+body footer .footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #202f66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .footer-bottom .logo {
+  max-width: 100%;
+  width: 150px;
+}
 
 /*# sourceMappingURL=main.css.map */
