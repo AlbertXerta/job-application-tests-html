@@ -67,7 +67,6 @@ body header .header-pill {
   background-color: #6ed5b8;
   padding: 25px 20px;
   border-radius: 55px;
-  display: flex;
 }
 @media screen and (min-width: 480px) {
   body header .header-pill {
@@ -79,18 +78,21 @@ body header .header-pill {
     padding: 35px 40px;
   }
 }
-body header .header-pill .logo {
+body header .header-pill a {
+  display: flex;
+}
+body header .header-pill a .logo {
   max-width: 100%;
   height: auto;
   width: 125px;
 }
 @media screen and (min-width: 480px) {
-  body header .header-pill .logo {
+  body header .header-pill a .logo {
     width: 150px;
   }
 }
 @media screen and (min-width: 768px) {
-  body header .header-pill .logo {
+  body header .header-pill a .logo {
     width: 180px;
   }
 }
@@ -235,18 +237,21 @@ body footer .footer-top .footer-columns .footer-col .socials {
   flex-direction: row;
   gap: 5px;
 }
-body footer .footer-top .footer-columns .footer-col .socials a:hover rect {
-  fill: #6ed5b8;
+body footer .footer-top .footer-columns .footer-col .socials a:hover .fa-circle {
+  color: #6ed5b8;
 }
 body footer .footer-bottom {
   text-align: center;
   padding: 20px 0;
   background-color: #202f66;
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
 }
-body footer .footer-bottom .logo {
+body footer .footer-bottom a {
+  display: flex;
+}
+body footer .footer-bottom a .logo {
   max-width: 100%;
   width: 150px;
 }
